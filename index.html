@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, Little Sister!</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      font-family: 'Comic Sans MS', cursive;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      background-color: #ff99cc;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .decorations {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    .quote {
+      background-color: #ffe6f0;
+      text-align: center;
+      font-size: 1.4em;
+      color: #b30059;
+      padding: 20px;
+      font-style: italic;
+    }
+
+    .sister-photo {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .sister-photo img {
+      width: 80%;
+      max-width: 600px;
+      border: 6px solid #ffcce0;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff99cc;
+    }
+
+    .caption {
+      font-size: 1.2em;
+      color: #cc0066;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+
+    .polaroid {
+      width: 200px;
+      background: white;
+      padding: 10px 10px 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transform: rotateZ(calc(-3deg + 6deg * var(--i)));
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+    }
+
+    .polaroid:hover {
+      transform: scale(1.05) rotateZ(0deg);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+      z-index: 2;
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .polaroid img.fit-photo {
+      object-fit: contain;
+      background-color: #fff6f9;
+    }
+
+    .polaroid .caption {
+      margin-top: 10px;
+      text-align: center;
+      color: #ff3399;
+    }
+
+    footer {
+      background-color: #ff99cc;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1.2em;
+    }
+
+    .float {
+      position: absolute;
+      animation: floatUp 6s infinite ease-in-out;
+      opacity: 0.5;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh); opacity: 0; }
+      50% { opacity: 0.7; }
+      100% { transform: translateY(-10vh); opacity: 0; }
+    }
+
+    @media screen and (max-width: 600px) {
+      .polaroid {
+        width: 90%;
+      }
+      .sister-photo img {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="decorations">🎂🎉💖</div>
+    <h1>Happy Birthday, Sweet Sister!</h1>
+    <div class="decorations">👭👑💝</div>
+  </header>
+
+  <div class="quote">
+    “Happy 17th Dustuuu!!!!!” 💫
+  </div>
+
+  <div class="sister-photo">
+
+    <div class="caption">To our birthday girl — you light up our lives every single day! 🎉🎈</div>
+  </div>
+
+  <div class="gallery">
+    <div class="polaroid" style="--i: 0"><img src="./baby.jpeg"><div class="caption">Cutie 🧸</div></div>
+    <div class="polaroid" style="--i: 1"><img src="./mp.jpeg" class="fit-photo"><div class="caption">The baby of the house 👶</div></div>
+    <div class="polaroid" style="--i: 2"><img src="./WhatsApp Image 2025-05-02 at 12.37.27 AM.jpeg"><div class="caption">Our little sunshine ☀️</div></div>
+    <div class="polaroid" style="--i: 3"><img src="./WhatsApp Image 2025-05-02 at 12.31.06 AM (1).jpeg"><div class="caption">Cheeky and cute! 😄</div></div>
+    <div class="polaroid" style="--i: 4"><img src="./WhatsApp Image 2025-05-02 at 12.31.06 AM (3).jpeg"><div class="caption">Our princess 💖</div></div>
+    <div class="polaroid" style="--i: 5"><img src="./cutie.jpeg"><div class="caption">Growing so fast! 🎈</div></div>
+    <div class="polaroid" style="--i: 6"><img src="./WhatsApp Image 2025-05-02 at 12.31.06 AM.jpeg"><div class="caption">Smile that melts us 😊</div></div>
+    <div class="polaroid" style="--i: 7"><img src="./f.jpeg" class="fit-photo"><div class="caption">Family 💕</div></div>
+    <div class="polaroid" style="--i: 8"><img src="./vrinda.jpeg"><div class="caption">Vrinda's Masi 🎀</div></div>
+    <div class="polaroid" style="--i: 9"><img src="./trio.jpeg"><div class="caption">You complete our trio 💫</div></div>
+  </div>
+
+  <footer>
+    👭 Dearest little sister — on your special day, we just want you to know how deeply you're loved and cherished. Happy Birthday to the heart of our trio! 💝🎂
+  </footer>
+
+  <!-- Floating birthday emojis -->
+  <div class="float" style="left: 10%; animation-delay: 1s;">🎈</div>
+  <div class="float" style="left: 30%; animation-delay: 2s;">💖</div>
+  <div class="float" style="left: 50%; animation-delay: 3s;">🎀</div>
+  <div class="float" style="left: 70%; animation-delay: 4s;">🎂</div>
+  <div class="float" style="left: 90%; animation-delay: 5s;">💐</div>
+
+</body>
+</html>
